@@ -21,5 +21,8 @@ namespace GradeBook.Models
 		[ForeignKey("GarandId")]
 		[InverseProperty(nameof(Ucitel.Predmety))]
 		public virtual Ucitel Garant { get; set; } = null!;
+
+		public virtual List<Znamka> Znamky { get; set; } = new();
+
 	}
 }
